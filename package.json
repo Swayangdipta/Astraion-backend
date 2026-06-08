@@ -9,7 +9,7 @@
   "keywords": [],
   "author": "Swayangdipta Das [Founder & CEO of Astraion]",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "description": "",
   "dependencies": {
     "bcryptjs": "^3.0.3",
@@ -18,7 +18,7 @@
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.6",
     "dotenv": "^17.4.2",
-    "express": "^5.2.1",
+    "express": "^4.21.2",
     "express-mongo-sanitize": "^2.2.0",
     "express-rate-limit": "^8.5.2",
     "helmet": "^8.2.0",
@@ -32,6 +32,7 @@
     "node-cron": "^4.2.1",
     "nodemailer": "^8.0.10",
     "razorpay": "^2.9.6",
+    "uuid": "^14.0.0",
     "winston": "^3.19.0"
   },
   "devDependencies": {
