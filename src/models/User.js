@@ -46,24 +46,29 @@ const userSchema = new mongoose.Schema(
             default: null,
             select: false,
         },
+        
         verificationToken: {
             type: String,
-            default: null
+            default: null,
+            select: false,
         },
 
         verificationTokenExpire: {
             type: Date,
-            default: null
+            default: null,
+            select: false,
         },
 
         passwordResetToken: {
             type: String,
-            default: null
+            default: null,
+            select: false,
         },
 
         passwordResetExpire: {
             type: Date,
-            default: null
+            default: null,
+            select: false,
         },
     },
     {

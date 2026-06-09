@@ -28,3 +28,16 @@ export const loginValidator = Joi.object({
     password: Joi.string()
         .required(),
 });
+
+export const forgotPasswordValidator = Joi.object({
+    email: Joi.string()
+        .email()
+        .required(),
+});
+
+export const resetPasswordValidator = Joi.object({
+    password: Joi.string()
+        .min(6)
+        .max(50)
+        .required(),
+});
