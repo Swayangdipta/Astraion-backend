@@ -266,11 +266,13 @@ export const forgotPassword = catchAsync(async (req, res) => {
 
         console.log("Reset URL:", resetUrl);
 
-        await sendEmail({
+        const emailResponse = await sendEmail({
             to: user.email,
             subject: "Reset Your Password",
             html: resetPasswordEmail(resetUrl),
         });
+
+            console.log("Email Response:", emailResponse);
     }
 
     return res.json({

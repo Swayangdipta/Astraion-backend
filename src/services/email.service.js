@@ -8,8 +8,7 @@ export const sendEmail = async ({
 
     const response =
         await resend.emails.send({
-            from:
-                process.env.EMAIL_FROM,
+            from: 'Astraion <onboarding@resend.dev>',
             to,
             subject,
             html,

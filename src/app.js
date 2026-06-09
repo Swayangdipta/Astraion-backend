@@ -11,6 +11,7 @@ import morgan from "morgan";
 import errorHandler from "./middlewares/error.middleware.js";
 import notFound from "./middlewares/notFound.middleware.js";
 import authRoutes from "./routes/auth.routes.js";
+import serviceRoutes from "./routes/service.routes.js";
 
 const app = express();
 
@@ -58,6 +59,11 @@ app.get("/api/health", (req, res) => {
 app.use(
     "/api/auth",
     authRoutes
+);
+
+app.use(
+    "/api/services",
+    serviceRoutes
 );
     
 app.use(notFound);
