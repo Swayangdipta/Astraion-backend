@@ -12,6 +12,7 @@ import errorHandler from "./middlewares/error.middleware.js";
 import notFound from "./middlewares/notFound.middleware.js";
 import authRoutes from "./routes/auth.routes.js";
 import serviceRoutes from "./routes/service.routes.js";
+import packageRoutes from "./routes/package.routes.js";
 
 const app = express();
 
@@ -64,6 +65,11 @@ app.use(
 app.use(
     "/api/services",
     serviceRoutes
+);
+
+app.use(
+    "/api/packages",
+    packageRoutes
 );
     
 app.use(notFound);
